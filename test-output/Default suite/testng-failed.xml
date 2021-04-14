@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
+    <classes>
+      <class name="com.framework.testcase.TC_LoginTest_001">
+        <methods>
+          <include name="setup"/>
+          <include name="loginDDT"/>
+          <include name="teardown"/>
+          <include name="execute"/>
+        </methods>
+      </class> <!-- com.framework.testcase.TC_LoginTest_001 -->
+      <class name="com.framework.testcase.TC_FlightConfirmationTest_005">
+        <methods>
+          <include name="setup"/>
+          <include name="teardown"/>
+          <include name="execute"/>
+          <include name="test"/>
+        </methods>
+      </class> <!-- com.framework.testcase.TC_FlightConfirmationTest_005 -->
+      <class name="com.framework.testcase.TC_SelectFlightTest_003">
+        <methods>
+          <include name="SelectFlightPage"/>
+          <include name="setup"/>
+          <include name="teardown"/>
+          <include name="execute"/>
+        </methods>
+      </class> <!-- com.framework.testcase.TC_SelectFlightTest_003 -->
+      <class name="com.framework.testcase.TC_BookFlightTest_004">
+        <methods>
+          <include name="setup"/>
+          <include name="teardown"/>
+          <include name="BookFlight"/>
+          <include name="execute"/>
+        </methods>
+      </class> <!-- com.framework.testcase.TC_BookFlightTest_004 -->
+      <class name="com.framework.testcase.TC_FlightFinderTest_002">
+        <methods>
+          <include name="setup"/>
+          <include name="teardown"/>
+          <include name="FlightFinder"/>
+          <include name="execute"/>
+        </methods>
+      </class> <!-- com.framework.testcase.TC_FlightFinderTest_002 -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

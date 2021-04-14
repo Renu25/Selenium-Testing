@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Framework]">
+  <listeners>
+    <listener class-name="com.framework.utilities.Reporting"/>
+  </listeners>
+  <test thread-count="5" name="Framework Test(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.framework.testcase.TC_BookAFlightTest_004">
+        <methods>
+          <include name="setup"/>
+          <include name="teardown"/>
+          <include name="BookFlight" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.framework.testcase.TC_BookAFlightTest_004 -->
+      <class name="com.framework.testcase.TC_FlightFinderTest_002">
+        <methods>
+          <include name="setup"/>
+          <include name="teardown"/>
+          <include name="FlightFinder" invocation-numbers="1"/>
+        </methods>
+      </class> <!-- com.framework.testcase.TC_FlightFinderTest_002 -->
+    </classes>
+  </test> <!-- Framework Test(failed) -->
+</suite> <!-- Failed suite [Framework] -->
